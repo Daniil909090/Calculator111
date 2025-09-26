@@ -1,0 +1,31 @@
+def add(a, b):
+    return a + b
+
+def sub(a, b):
+    return a - b
+
+def mul(a, b):
+    return a * b
+
+def div(a, b):
+    if b == 0:
+        return "Ошибка: деление на ноль!"
+    return a / b
+
+print("Простой калькулятор")
+x = float(input("Введите первое число: "))
+y = float(input("Введите второе число: "))
+
+print("Выберите операцию: + - * /")
+op = input("Операция: ")
+
+if op == "+":
+    print("Результат:", add(x, y))
+elif op == "-":
+    print("Результат:", sub(x, y))
+elif op == "*":
+    print("Результат:", mul(x, y))
+elif op == "/":
+    print("Результат:", div(x, y))
+else:
+    print("Неизвестная операция")
